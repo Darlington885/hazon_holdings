@@ -135,7 +135,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 color: AppColors.textColor2),
           ),
           SizedBox(height: 20,),
-
+          Text(
+            "First Name",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+                fontFamily: AppFonts.Cabinet_Grotesk,
+                fontWeight: FontWeight.w700,
+                fontSize: 16,
+                fontStyle: FontStyle.normal,
+                color: AppColors.textColor2),
+          ),
+          SizedBox(height: 5.0,),
           Observer(
             builder: (_) =>InputField(
               controller: firstNameController,
@@ -146,11 +156,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
 
               },
-              prefixIcon: Padding(
-                //padding: const EdgeInsets.only(left: 20, right: 4),
-                padding: const EdgeInsets.all(15),
-                child:   Image.asset(assetPerson, height: 18, width: 18,),
-              ),
+
               // message: registerStore.error.firstName,
               // error: registerStore.error.firstName!= null,
               color: AppColors.textColor3,
@@ -161,6 +167,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
           ),
 
           //SizedBox(height: 5.0,),
+          Text(
+            "Last Name",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+                fontFamily: AppFonts.Cabinet_Grotesk,
+                fontWeight: FontWeight.w700,
+                fontSize: 16,
+                fontStyle: FontStyle.normal,
+                color: AppColors.textColor2),
+          ),
+          SizedBox(height: 5.0,),
           Observer(
             builder: (_) =>InputField(
               controller: lastNameController,
@@ -171,11 +188,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
 
               },
-              prefixIcon: Padding(
-                //padding: const EdgeInsets.only(left: 20, right: 4),
-                padding: const EdgeInsets.all(15),
-                child:   Image.asset(assetPerson, height: 18, width: 18,),
-              ),
+
               // message: registerStore.error.lastName,
               // error: registerStore.error.lastName!= null,
               color: AppColors.textColor3,
@@ -185,22 +198,28 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
           ),
           // SizedBox(height: 10.0,),
-
+          Text(
+            "Date of Birth",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+                fontFamily: AppFonts.Cabinet_Grotesk,
+                fontWeight: FontWeight.w700,
+                fontSize: 16,
+                fontStyle: FontStyle.normal,
+                color: AppColors.textColor2),
+          ),
+          SizedBox(height: 5.0,),
           Observer(
             builder: (_) =>InputField(
               controller: dobController,
               type: TextInputType.phone,
-              hint: 'Phone Number',
+              hint: 'Date of Birth',
               onChanged: (text) {
                 //registerStore.phoneNumber = text;
 
 
               },
-              prefixIcon: Padding(
-                //padding: const EdgeInsets.only(left: 20, right: 4),
-                padding: const EdgeInsets.all(15),
-                child:   Image.asset(assetPhone, height: 18, width: 18,),
-              ),
+
               // message: registerStore.error.dobController,
               // error: registerStore.error.dobController!= null,
               color: AppColors.textColor3,
@@ -286,6 +305,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
           ),
         ],),
 SizedBox(height: 5,),
+          Text(
+            "Email",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+                fontFamily: AppFonts.Cabinet_Grotesk,
+                fontWeight: FontWeight.w700,
+                fontSize: 16,
+                fontStyle: FontStyle.normal,
+                color: AppColors.textColor2),
+          ),
+          SizedBox(height: 5.0,),
           Observer(
             builder: (_) =>InputField(
               controller: emailController,
@@ -309,6 +339,17 @@ SizedBox(height: 5,),
             ),
           ),
           //SizedBox(height: 5.0,),
+          Text(
+            "Password",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+                fontFamily: AppFonts.Cabinet_Grotesk,
+                fontWeight: FontWeight.w700,
+                fontSize: 16,
+                fontStyle: FontStyle.normal,
+                color: AppColors.textColor2),
+          ),
+          SizedBox(height: 5.0,),
           Observer(
             builder: (_) =>InputField(
               controller: passwordController,

@@ -140,7 +140,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             builder: (_) =>InputField(
               controller: firstNameController,
               type: TextInputType.text,
-              hint: 'First Name',
+              hint: 'Enter First Name',
               onChanged: (text) {
                 //registerStore.firstName = text;
 

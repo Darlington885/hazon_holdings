@@ -9,8 +9,8 @@ part of 'login_store.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
 mixin _$LoginStore on _LoginStore, Store {
-  final _$loadingAtom =
-      Atom(name: '_LoginStore.loading', );
+   final _$loadingAtom =
+      Atom(name: '_LoginStore.loading',);
 
   @override
   bool get loading {
@@ -25,8 +25,8 @@ mixin _$LoginStore on _LoginStore, Store {
     });
   }
 
-   final _$passwordVisibleAtom =
-      Atom(name: '_LoginStore.passwordVisible');
+ final _$passwordVisibleAtom =
+      Atom(name: '_LoginStore.passwordVisible', );
 
   @override
   bool get passwordVisible {
@@ -57,8 +57,8 @@ mixin _$LoginStore on _LoginStore, Store {
     });
   }
 
-   final _$_LoginStoreActionController =
-      ActionController(name: '_LoginStore', );
+  final _$_LoginStoreActionController =
+      ActionController(name: '_LoginStore',);
 
   @override
   void load(bool load) {
@@ -101,8 +101,8 @@ mixin _$LoginErrorStore on _LoginErrorStore, Store {
               name: '_LoginErrorStore.hasErrors'))
           .value;
 
- final _$passwordAtom =
-      Atom(name: '_LoginErrorStore.password', );
+  final _$passwordAtom =
+      Atom(name: '_LoginErrorStore.password',);
 
   @override
   String get password {
